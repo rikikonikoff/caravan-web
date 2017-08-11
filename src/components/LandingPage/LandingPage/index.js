@@ -1,6 +1,6 @@
 import React from 'react';
-import HorizontalLoopCar from './HorizontalLoopCar/index'
-import LandingPageCopy from './Copy/index'
+import HorizontalLoopCar from '../HorizontalLoopCar';
+import LandingPageCopy from '../Copy';
 
 const LandingPage = (props) => {
   return(
