@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute } from 'react-router';
 import store, { history } from './store/configureStore';
 import App from './components/App';
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/LandingPage/LandingPage';
 import registerServiceWorker from './registerServiceWorker';
 
 const router = (

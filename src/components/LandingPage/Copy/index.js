@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { icGooglePlus } from '../../../utilities/imageUrls'
+import GoogleLogin from '../GoogleLogin';
 
 class LandingPageCopy extends Component {
   render(){
@@ -12,10 +12,7 @@ class LandingPageCopy extends Component {
             travelers will get to their destination.
           </div>
         </div>
-        <button className='google-button' onClick={this.props.clickGoogleLogin}>
-          <img className='gplus' src={icGooglePlus} alt=''/>
-          Log in with Google
-        </button>
+        <GoogleLogin />
       </div>
     )
   }

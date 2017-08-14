@@ -2,7 +2,7 @@ import React from 'react';
 import HorizontalLoopCar from '../HorizontalLoopCar';
 import LandingPageCopy from '../Copy';
 
-const LandingPage = (props) => {
+const LandingPage = () => {
   return(
     <div className='container'>
       <div className='splashscreen-gradient'>
@@ -14,7 +14,7 @@ const LandingPage = (props) => {
         </div>
       </div>
       <div className='welcome-background'>
-        <LandingPageCopy {...props}/>
+        <LandingPageCopy />
       </div>
     </div>
   )

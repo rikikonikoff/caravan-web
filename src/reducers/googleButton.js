@@ -1,13 +1,13 @@
 const initialState = {
-  isClicked: false,
+  googleUser: {},
 }
 
-const googleButton = (state = initialState.isClicked, action) => {
-  switch (action.type) {
+const googleButton = (state = initialState, { type, payload }) => {
+  switch (type) {
     case 'GOOGLE_BUTTON_CLICK':
       return {
         ...state,
-        isClicked: action.googleButtonClicked,
+        googleUser: payload,
       }
     default:
       return state;
