@@ -1,11 +1,9 @@
-const json = 'application/json';
-
 const createAuthHeader = accessToken => ({
   Authorization: `Bearer ${accessToken}`,
 });
 
-export const acceptHeader = { Accept: json };
-export const contentTypeHeader = { 'Content-Type': json };
+export const acceptHeader = { Accept: 'application/vnd.caravan-server.com; version=1' };
+export const contentTypeHeader = { 'Content-Type': 'application/json' };
 
 export const bodyHeaders = {
   ...acceptHeader,
