@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import LandingPage from '../LandingPage/index';
-import HorizontalLoopCar from '../LandingPage/HorizontalLoopCar/index';
-import LandingPageCopy from '../LandingPage/Copy/index';
+import LandingPage from '../index';
+import HorizontalLoopCar from '../../HorizontalLoopCar';
+import LandingPageCopy from '../../Copy';
 
 describe ('LandingPage', () => {
   let wrapper = shallow(<LandingPage />);
