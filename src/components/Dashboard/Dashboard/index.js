@@ -1,8 +1,14 @@
 import React from 'react';
 
+export const listTitle = 'Upcoming Caravans'.toUpperCase();
+
 const Dashboard = () => (
-  <div>
-    I am the dashboard!
+  <div className='container'>
+    <div className='splashscreen-gradient'>
+      <div className='splashscreen-pattern'>
+        {listTitle}
+      </div>
+    </div>
   </div>
 );
 
