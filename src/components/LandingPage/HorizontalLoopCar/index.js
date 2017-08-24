@@ -2,7 +2,7 @@ import React from 'react';
 import { carImage } from '../../../utilities/imageUrls'
 
 const HorizontalLoopCar = () => (
-  <div className='car-wrapper'>
+  <div className='carWrapper'>
     <img className='car' src={carImage} alt='' />
   </div>
 )

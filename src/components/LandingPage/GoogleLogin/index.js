@@ -6,7 +6,7 @@ import processProps from './processProps';
 const loginButtonText = 'Log in with Google'
 
 export const GoogleLogin = ({ onClick }) => (
-  <button className='google-button' onClick={onClick}>
+  <button className='googleButton' onClick={onClick}>
     <img className='gplus' src={icGooglePlus} alt=''/>
     {loginButtonText}
   </button>

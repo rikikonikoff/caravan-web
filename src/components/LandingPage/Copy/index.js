@@ -5,7 +5,7 @@ const LandingPageCopy = () => (
   <div>
     <div className='welcome'>
       Welcome to Caravan
-      <div className='welcome-description'>
+      <div className='welcomeDescription'>
         Taking a road trip? Organize how
         travelers will get to their destination.
       </div>

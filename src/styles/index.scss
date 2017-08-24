@@ -1,5 +1,6 @@
 @import './constants/fonts.scss';
 @import './LandingPage.scss';
+@import './Dashboard.scss';
 
 body {
   font-family: $montserrat;
@@ -10,11 +11,12 @@ body {
 
 button {
   &:active {
-  box-shadow: 0 0 1px 1px $clementine-orange;
+    box-shadow: 0 0 1px 1px $clementine-orange;
   }
   &:focus {
-  outline: none;
+    outline: none;
   }
+
   background-color: $butterscotch;
   border: 0;
   border-radius: 4px;
@@ -31,8 +33,8 @@ button {
 
 @media (min-width: 1143px) {
   button {
-  font-size: 20px;
-  font-weight: 400;
+    font-size: 20px;
+    font-weight: 400;
   }
 }
 
@@ -41,18 +43,4 @@ button {
   flex-direction: row;
   height: 100vh;
   width: 100vw;
-}
-
-.splashscreen-gradient {
-  background: linear-gradient(to bottom, $light-pink, $reddish-pink);
-  position: relative;
-  width: 56%;
-}
-
-.splashscreen-pattern {
-  background: $landing_page_pattern;
-  background-position: 1% -7%;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
 }
