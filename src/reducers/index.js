@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import googleButton from './googleButton';
+import authentication from './authentication';
 
 const rootReducer = combineReducers({
-  googleButton,
+  authentication,
   routing: routerReducer,
 })
 
