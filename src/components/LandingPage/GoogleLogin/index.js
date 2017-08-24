@@ -1,36 +1,17 @@
-import React from 'react';
-import { compose, withHandlers } from 'recompose';
-import { clientId } from '../../../utilities/environmentVariables';
 import { icGooglePlus } from '../../../utilities/imageUrls'
-import gapi from 'gapi-client';
-import { clickGoogleLogin } from '../../../actions/actionCreators';
-import { connect } from 'react-redux';
+import { compose } from 'recompose';
+import React from 'react';
+import processProps from './processProps';
 
-export const startGoogle = ({ clickGoogleLogin }) => {
-  gapi.load('client:auth2', () => {
-    gapi.auth2.authorize({
-      'client_id': clientId,
-      'cookie_policy': 'none',
-      // 'scope': 'profile, email',
-      'response_type': 'id_token',
-    }, clickGoogleLogin);
-  });
-};
+const loginButtonText = 'Log in with Google'
 
-export const onClick = ({ clickGoogleLogin }) => () => {
-  startGoogle({ clickGoogleLogin });
-}
-
-const GoogleLogin = ({ onClick }) => (
-  <div className='googleLogin'>
-    <button className='google-button' onClick={onClick}>
-      <img className='gplus' src={icGooglePlus} alt=''/>
-      Log in with Google
-    </button>
-  </div>
-)
+export const GoogleLogin = ({ onClick }) => (
+  <button className='google-button' onClick={onClick}>
+    <img className='gplus' src={icGooglePlus} alt=''/>
+    {loginButtonText}
+  </button>
+);
 
 export default compose(
-  connect(null, { clickGoogleLogin }),
-  withHandlers({ onClick })
+  processProps,
 )(GoogleLogin);
