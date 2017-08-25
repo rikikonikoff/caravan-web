@@ -1,1 +1,17 @@
-@import './constants/colors.scss';
+@import './constants/*';
+
+.dashboardGradient {
+  background: linear-gradient(to bottom, $light-pink, $reddish-pink);
+  position: relative;
+  width: 100%;
+}
+
+.dashboardPattern {
+  background: $landing-page-pattern;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.upcomingCaravans {
+  color: $white;
+}

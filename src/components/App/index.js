@@ -10,7 +10,7 @@ function mapDispatchToProps(dispatch) {
 class App extends Component {
   render(){
     return(
-      <div className='container'>
+      <div>
         {cloneElement(this.props.children, this.props)}
       </div>
     )

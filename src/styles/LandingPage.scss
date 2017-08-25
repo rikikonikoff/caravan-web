@@ -1,5 +1,4 @@
-@import './constants/colors.scss';
-@import './constants/urls.scss';
+@import './constants/*';
 
 .car {
   position: fixed;
@@ -29,14 +28,6 @@
   width: 56%;
 }
 
-.splashscreenPattern {
-  background: $landing_page_pattern;
-  background-position: 1% -7%;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-}
-
 .splashscreenLogo {
   color: $white;
   font-size: 30px;
@@ -45,6 +36,14 @@
   margin: 3% 15%;
   text-align: center;
   width: 20%;
+}
+
+.splashscreenPattern {
+  background: $landing-page-pattern;
+  background-position: 1% -7%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
 }
 
 .welcome {
